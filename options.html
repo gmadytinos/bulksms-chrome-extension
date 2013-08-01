@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<title>BulkSMS Extension - Options</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+
+<body>
+
+<form class="large-4 columns">
+  <fieldset>
+    <legend>BulkSMS Extension Credentials</legend>
+
+    <div class="row" id="status" style="display:none;">
+      <div class="large-12 columns">
+	<div class=" alert-box radius success" data-alert>
+	  Configuration Saved.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+       <div class="large-12 columns">
+	<p>Please note that credentials are stored locally on your machine.</p>
+       </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Username</label>
+        <input type="text" placeholder="large-12.columns" id="username">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Password</label>
+        <input type="password" placeholder="large-4.columns" id="password">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+	<button id="save">Save</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>
+
+
+
+<script src="options.js"></script>
+<script src="js/foundation/foundation.min.js"></script>
+<script src="js/foundation/foundation.alert.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>
