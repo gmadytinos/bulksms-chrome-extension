@@ -7,13 +7,12 @@
   <script src="js/vendor/custom.modernizr.js"></script>
 </head>
 
-<body>
+<body class="large-4 columns">
 
-<form class="large-4 columns">
   <fieldset>
     <legend>BulkSMS Extension Credentials</legend>
 
-    <div class="row" id="status" style="display:none;">
+    <div class="row" id="status">
       <div class="large-12 columns">
 	<div class=" alert-box radius success" data-alert>
 	  Configuration Saved.
@@ -30,14 +29,14 @@
     <div class="row">
       <div class="large-12 columns">
         <label>Username</label>
-        <input type="text" placeholder="large-12.columns" id="username">
+        <input type="text" placeholder="Enter your username..." id="username">
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 columns">
         <label>Password</label>
-        <input type="password" placeholder="large-4.columns" id="password">
+        <input type="password" id="password">
       </div>
     </div>
 
@@ -48,16 +47,11 @@
     </div>
 
   </fieldset>
-</form>
 
-
-
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.alerts.js"></script>
 <script src="options.js"></script>
-<script src="js/foundation/foundation.min.js"></script>
-<script src="js/foundation/foundation.alert.js"></script>
-<script>
-    $(document).foundation();
-</script>
 
 </body>
 </html>

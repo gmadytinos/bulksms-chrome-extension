@@ -1,6 +1,6 @@
 {
   "name": "BulkSMS Remaining Credits",
-  "version": "1.1",
+  "version": "1.5",
   "manifest_version": 2,
   "icons": {"32":"icon.ico",
 	    "48":"icon48.ico",
@@ -12,7 +12,6 @@
   },
   "background": { "scripts": ["check.js"] },
   "permissions": [
- "storage", "webRequest", "http://bulksms.2way.co.za/*", "https://bulksms.2way.co.za/*"
-  ],
+ "storage", "webRequest", "https://bulksms.2way.co.za/*" ],
   "options_page": "options.html"
 }
