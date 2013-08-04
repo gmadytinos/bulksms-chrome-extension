@@ -1,17 +1,25 @@
 {
   "name": "BulkSMS Remaining Credits",
-  "version": "1.5",
+  "version": "1.0.8",
   "manifest_version": 2,
-  "icons": {"32":"icon.ico",
-	    "48":"icon48.ico",
-	    "128":"icon128.ico"},
+  "icons": {"16":"icon16.ico",
+	    "32":"icon32.ico",
+	    "48":"icon48.png",
+	    "128":"icon128.png"},
   "description": "This shows the amount of credits left on a configurable BulkSMS account.",
   "browser_action": {
-    "default_icon": "icon.ico",
-    "default_title": "BulkSMS Remaining Credits"
+    "default_icon": "icon16.ico",
+    "default_title": "BulkSMS Remaining Credits",
+    "default_popup": "options.html"
   },
-  "background": { "scripts": ["check.js"] },
+  "background": { "scripts": ["js/common.js", "js/background.js"] },
   "permissions": [
- "storage", "webRequest", "https://bulksms.2way.co.za/*" ],
+ "storage", "webRequest", 
+			"https://bulksms.2way.co.za/*", 
+			"https://bulksms.vsms.net/*",
+			"https://usa.bulksms.com/*",
+			"https://www.bulksms.co.uk/*",
+			"https://bulksms.de/*",
+			"https://bulksms.com.es/*" ],
   "options_page": "options.html"
 }
