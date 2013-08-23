@@ -11,7 +11,7 @@ function getCredits(username, password, url) {
   	  if (xhr.readyState == 4) {
 	    var errorCode = xhr.responseText.substr(0, xhr.responseText.indexOf('|'));
 	    var credits = xhr.responseText.substr(xhr.responseText.indexOf('|')+1, 
-	    	 Math.min(xhr.responseText.length-(xhr.responseText.indexOf(getDecimalSeparator())+1), 4));
+	    	 Math.min(xhr.responseText.indexOf(getDecimalSeparator())-xhr.responseText.indexOf('|')-1, 4));
 	    if (errorCode > 0) {
 	      if (errorCode == 23)
 	        chrome.browserAction.setTitle({title: "Please set your BulkSMS username and password in the Options"});
