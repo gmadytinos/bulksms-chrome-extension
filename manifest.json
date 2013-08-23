@@ -1,6 +1,6 @@
 {
   "name": "BulkSMS Remaining Credits",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "manifest_version": 2,
   "icons": {"16":"icon16.ico",
 	    "32":"icon32.ico",
